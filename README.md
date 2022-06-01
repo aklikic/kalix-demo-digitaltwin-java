@@ -1,5 +1,5 @@
 # IoT Digital Twin DEMO - Java - Event Sourced
-
+Not supported by Lightbend in any conceivable way, not open for contributions.
 ## Prerequisite
 - Java 11 or later<br>
 - Apache Maven 3.6 or higher<br>
@@ -203,20 +203,20 @@ mvn deploy
 curl -XPOST -d '{
   "name": "DT1",
   "metric_value_alert_threshold": "10"
-}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/1/create -H "Content-Type: application/json"
+}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/4/create -H "Content-Type: application/json"
 ```
 ```
 curl -XPOST -d '{
   "metric_value": "5"
-}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/1/add-metric -H "Content-Type: application/json"
+}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/4/add-metric -H "Content-Type: application/json"
 ```
 ```
-curl -XGET https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/1 -H "Content-Type: application/json"
+curl -XGET https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/4 -H "Content-Type: application/json"
 ```
 ```
 curl -XPOST -d '{
   "metric_value": "11"
-}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/1/add-metric -H "Content-Type: application/json"
+}' https://winter-bonus-0316.eu-central-1.kalix.app/digitaltwin/4/add-metric -H "Content-Type: application/json"
 ```
 ```
 digitaltwin_topic.proto
